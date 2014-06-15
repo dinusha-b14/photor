@@ -1,3 +1,3 @@
 require 'hashugar'
-require 'photor/version'
+require 'httparty'
 require 'photor/photor'

@@ -9,10 +9,10 @@ module Photor
   end
 
   class Configuration
-    attr_accessor :api_key
+    attr_accessor :api_key, :format
 
     def initialize
-      @api_key = ENV['FLICKR_API_KEY']
+      @format = :rest
     end
   end
 end

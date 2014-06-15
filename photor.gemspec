@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "oauth"
   spec.add_dependency "hashugar"
+  spec.add_dependency "httparty"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "ffaker"
   spec.add_development_dependency "factory_girl"
