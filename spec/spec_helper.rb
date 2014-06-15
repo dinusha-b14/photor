@@ -29,4 +29,6 @@ RSpec.configure do |config|
 
   config.include PhotorHelpers
 
+  config.add_formatter(:documentation)
+
 end
