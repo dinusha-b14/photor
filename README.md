@@ -28,3 +28,5 @@ Within your application's initializers, create a new file and setup the followin
       config.format = preferred_response_type (i.e. :json, :rest, :xml). This is set to :rest by default
 
       config.nojsoncallback = (either 1 or 0 depending on the type of json response you would like)
+
+    end
