@@ -9,10 +9,11 @@ module Photor
   end
 
   class Configuration
-    attr_accessor :api_key, :format
+    attr_accessor :api_key, :format, :nojsoncallback
 
     def initialize
       @format = :rest
+      @nojsoncallback = 0
     end
   end
 end

@@ -1,9 +1,9 @@
 module Photor
   class Photo < Photor::Base
-    def getRecent(options={})
-      @options = options
+    def get_recent(options={})
+      @options = options.merge(method: 'flickr.photos.getRecent')
       wrap_options
-      get("/", @options)
+      get('/', @options)
     end
 
     def wrap_options
@@ -11,11 +11,5 @@ module Photor
       @options = { query: @options }
     end
 
-    def merge_config_options
-      @options.merge!(
-        api_key: Photor.configuration.api_key,
-        format: Photor.configuration.format
-      )
-    end
   end
 end
